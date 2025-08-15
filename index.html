@@ -201,6 +201,24 @@ header {
     gap: 8px;
     font-weight: 600;
 }
+    /* Responsive mobile */
+@media (max-width: 768px){
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-info {
+        text-align: center;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
 .skills-grid ul {
     margin-left: 10px;
     margin-bottom: 15px;
@@ -487,4 +505,5 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
 
 </script>
 </body>
+
 </html>
